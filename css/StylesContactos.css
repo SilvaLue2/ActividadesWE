@@ -1,0 +1,198 @@
+
+/*Selector Padre (OBLIGATORIAMEMTE */
+:root{
+    
+    /*variables CSS*/
+    --color-primario: #EC111A;
+    --color-secuandario:#082BA5;
+    --color-terciario:#007BDF;
+    --color-sombras: #282D31;
+    --color-titulo: #282D31;
+    --color-texto: #53575A;
+
+}
+
+
+/* SELECTOR UNIVERSAL (OBLIGATORIAMEMTE)*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ /* INICO DE MENU */
+ header{
+    background-color: var(--color-titulo);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 0 16px var(--color-sombras);
+    color: #fff;
+    padding: 0.5em 0;
+    text-align: center;
+
+}
+
+
+.menu{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.img-logo{
+    width: 110px;
+    height: 110px;
+    
+}
+
+.btn-menu{
+    display: none;
+}
+
+.enlaces a{
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: .9em;
+    margin: 0 1em;
+}
+
+.enlaces a:hover{
+    color: var(--color-primario);
+    transition: color .5s;
+}
+
+/* Libreria Headdroom para menos navegación */
+.headroom{
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned{
+    transform: translateY(0%);
+
+}
+
+.headroom--unpinned{
+    transform: translateY(-100%);
+}
+
+
+/* Responsive web desing form mobile */
+@media screen and (max-width: 900px){
+
+    .menu{ 
+        flex-direction: column;
+     }
+
+     .logo{
+         display: flex;
+         justify-content: space-between;
+         width: 100%;
+     }
+
+     .btn-menu{
+        display: block;
+        margin-top: 1.5em;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+     }
+
+     .enlaces{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+     }
+
+
+}
+
+/*SELECTOR DE CLASE POR PUNTO*/
+.titulo{
+    color: var(--color-secuandario);
+    font-size: 2em;
+}
+
+form{
+
+    max-width: 950px;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: 2px 2px 6px var(--color-sombras);
+    padding: 1.5em;
+    margin: auto;
+}
+
+input{  
+    width: 95%;
+    padding: .3em;
+    border: none;
+    border: 1px solid var(--color-primario);
+    border-radius: .2em;
+    margin-bottom: 1em;
+
+}
+
+input, textarea{
+
+    width: 100%;
+    padding: .3em;
+    border: none;
+    border: 1px solid var(--color-primario);
+    border-radius: .2em;
+    margin-bottom: 1em;
+}
+
+textarea{    
+    max-height: 250px;
+    max-height: 250px;
+}
+
+.boton{
+    background-color: var(--color-primario);
+    color: #fff;
+    font-weight:bold;
+    padding: .5em;
+
+}
+
+.boton:hover{
+    background-color: var(--color-sombras);
+    border: 1px solid var(--color-sombras);
+    transition: background-color .3s ;
+}
+
+
+.container{
+    max-width: 90%;
+    padding: .3em 1em;
+    margin-top: 8em;
+    margin-bottom: 4.5em;
+   border-radius: 1em;
+}
+
+.fa-whatsapp{
+    font-size: 3.5em;
+    padding: 0;  
+    position: fixed;
+    right: 20px;  
+    bottom: 20px;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 1em;
+    background-color: rgb(99, 230, 119);
+    padding: 16px;
+    
+}
+
+
+
+
