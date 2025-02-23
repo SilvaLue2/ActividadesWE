@@ -232,6 +232,7 @@ i{
 
 .img-fluid{
     border-radius: 1em;
+    width: 100%;
 }
 
 
@@ -246,5 +247,6 @@ i{
     border-radius: 1em;
     background-color: rgb(99, 230, 119);
     padding: 16px;
+    color: white;
     
 }

@@ -46,8 +46,7 @@
     }
 
     .img-logo{
-        width: 110px;
-        height: 110px;
+        width: 100%
         
     }
 
@@ -205,5 +204,6 @@
     border-radius: 1em;
     background-color: rgb(99, 230, 119);
     padding: 16px;
+    color: #fff;
     
 }
